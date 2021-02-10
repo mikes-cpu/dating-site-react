@@ -1,10 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "bw gradual DEMO";
+  src: url(fonts/BwGradualDEMO-Regular.otf);
+}
+
+@font-face {
+  font-family: "monument extended";
+  src: url(fonts/MonumentExtended-Black.otf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: bw gradual DEMO;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // color: #fffeff;
 }
 
 code {

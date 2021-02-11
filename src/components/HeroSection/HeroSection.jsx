@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HeaderText } from "../HeaderText/HeaderText";
 import "./HeroSection.scss";
 import useVH from "react-viewport-height";
@@ -6,6 +6,7 @@ import { Button } from "../Button/Button";
 
 function HeroSection({ signIn }) {
   useVH();
+
   const [headingSize, setHeadingSize] = useState("");
 
   const controlHeadingSize = () => {

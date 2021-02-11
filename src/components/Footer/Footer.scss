@@ -95,7 +95,6 @@
 
   .container__link-wrapper {
     display: flex;
-    // // align-items: center;
     justify-content: space-between;
     padding-bottom: 40px;
     width: 70%;
@@ -111,12 +110,7 @@
     }
 
     .link-wrapper__social {
-      // display: flex;
       margin: 5px 0 0 0 !important;
-      // justify-content: space-evenly;
-      // width: 20% !important;
-      // // margin: 40px auto 0 auto;
-      // padding-bottom: 40px !important;
     }
   }
 }

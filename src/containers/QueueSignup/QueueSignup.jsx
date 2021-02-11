@@ -19,14 +19,14 @@ function QueueSignup({ signIn, signOut, queueData }) {
           <HeaderText
             headerText="Your Number In The Queue:"
             headerTextStyle="headerText--primary"
-            headerTextSize="headerText--medium"
+            headerTextSize="headerText--small"
             headerTextColor="headerText--pink"
           />
           <p>{queueData.number_users_in_queue}</p>
           <HeaderText
             headerText="Guests Already Registered:"
             headerTextStyle="headerText--primary"
-            headerTextSize="headerText--medium"
+            headerTextSize="headerText--small"
             headerTextColor="headerText--pink"
           />
           <p>{queueData.number_users_currently_registered}</p>

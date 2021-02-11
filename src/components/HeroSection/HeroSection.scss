@@ -1,0 +1,16 @@
+@import "../../variables.scss";
+
+.HeroSection {
+  background-color: $colour-1;
+  .HeroSection__container {
+    min-height: calc(var(--vh, 1vh) * 100 - 75px);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+
+    p {
+      margin: 20px 0 30px 0;
+    }
+  }
+}

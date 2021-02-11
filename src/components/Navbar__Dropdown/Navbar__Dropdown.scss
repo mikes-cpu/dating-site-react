@@ -1,0 +1,185 @@
+@import "../../variables.scss";
+
+.navbar__dropdown {
+  .active {
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    top: 75px;
+    z-index: 0;
+    border-bottom: 1px solid $colour-2;
+    transition: 2s;
+
+    ul {
+      list-style: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      li {
+        margin: 15px;
+      }
+    }
+
+    hr {
+      border: $colour-2 solid 1px;
+      width: 90%;
+      margin: 40px auto !important;
+      text-align: center;
+    }
+
+    p {
+      color: $colour-2;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .androidLogo {
+      margin-right: 30px;
+    }
+    .appStoreLogo {
+      transform: translateY(1px);
+    }
+
+    .container__links {
+      display: flex;
+      justify-content: center;
+
+      p {
+        margin: 20px 15px;
+      }
+    }
+
+    .container__social {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+      margin: auto;
+      margin-bottom: 40px;
+      .instagram {
+        background-color: $colour-2;
+        border-radius: 50%;
+        img {
+          height: 35px;
+          width: 40px;
+          padding: 10px;
+          transform: translateY(2px);
+        }
+      }
+
+      .facebook {
+        background-color: $colour-2;
+        border-radius: 50%;
+        img {
+          height: 35px;
+          width: 40px;
+          padding: 10px;
+          transform: translateY(2px);
+        }
+      }
+
+      .twitter {
+        background-color: $colour-2;
+        border-radius: 50%;
+        img {
+          height: 35px;
+          width: 40px;
+          padding: 10px;
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+
+  .hide {
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    top: -460px;
+    z-index: 0;
+    border-bottom: 1px solid $colour-2;
+    transition: 2s;
+
+    ul {
+      list-style: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      li {
+        margin: 15px;
+      }
+    }
+
+    hr {
+      border: $colour-2 solid 1px;
+      width: 90%;
+      margin: 40px auto !important;
+      text-align: center;
+    }
+
+    p {
+      color: $colour-2;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .androidLogo {
+      margin-right: 30px;
+    }
+    .appStoreLogo {
+      transform: translateY(1px);
+    }
+
+    .container__links {
+      display: flex;
+      justify-content: center;
+
+      p {
+        margin: 20px 15px;
+      }
+    }
+
+    .container__social {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+      margin: auto;
+      margin-bottom: 40px;
+      .instagram {
+        background-color: $colour-2;
+        border-radius: 50%;
+        img {
+          height: 35px;
+          width: 40px;
+          padding: 10px;
+          transform: translateY(2px);
+        }
+      }
+
+      .facebook {
+        background-color: $colour-2;
+        border-radius: 50%;
+        img {
+          height: 35px;
+          width: 40px;
+          padding: 10px;
+          transform: translateY(2px);
+        }
+      }
+
+      .twitter {
+        background-color: $colour-2;
+        border-radius: 50%;
+        img {
+          height: 35px;
+          width: 40px;
+          padding: 10px;
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+}

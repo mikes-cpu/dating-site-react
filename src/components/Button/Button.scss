@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+
+.button {
+  padding: 10px 35px;
+  width: fit-content;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+}
+
+.button--primary-pink {
+  border: none;
+  background-color: $colour-2;
+  color: $colour-1;
+}
+.button--primary-purple {
+  border: none;
+  background-color: $colour-1;
+  color: $colour-2;
+}
+.button--primary-orange {
+  border: none;
+  background-color: $colour-3;
+  color: #fff;
+}
+
+.button--outline-pink {
+  border: 4px solid $colour-2;
+  background: transparent;
+  color: $colour-2;
+}
+.button--outline-purple {
+  border: 4px solid $colour-1;
+  background: transparent;
+  color: $colour-1;
+}
+.button--outline-orange {
+  border: 4px solid $colour-3;
+  background: transparent;
+  color: $colour-3;
+}
+
+.button--basic--white {
+  border-radius: 2px;
+  color: $colour-1;
+  background-color: #fff;
+}
+.button--small {
+}
+.button--medium {
+}
+.button--Large {
+}

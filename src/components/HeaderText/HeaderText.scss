@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.headerText {
+  font-family: $heading-font;
+  font-size: 20px;
+}
+
+.headerText--primary {
+  color: $text-colour-primary;
+}
+.headerText--underline {
+  color: $text-colour-primary;
+  text-decoration: underline;
+}
+.headerText--small {
+  font-size: 1rem;
+}
+.headerText--medium {
+  font-size: 1.5rem;
+}
+.headerText--large {
+  font-size: 2rem;
+}
+.headerText--white {
+  color: $text-colour-primary;
+}
+.headerText--pink {
+  color: $colour-2;
+}
+.headerText--purple {
+  color: $colour-1;
+}
+.headerText--orange {
+  color: $colour-3;
+}

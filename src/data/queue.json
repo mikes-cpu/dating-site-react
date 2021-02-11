@@ -1,0 +1,6 @@
+{
+  "status": "in_progress",
+  "retry_after_seconds": 30,
+  "number_users_in_queue": 10,
+  "number_users_currently_registered": 347
+}

@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+.sectionLayout_2 {
+  background-color: $colour-2;
+  .sectionLayout_2__container {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 80px 0;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container__section-text-wrapper * {
+    margin-bottom: 40px;
+  }
+
+  .container__section-video-wrapper {
+    video {
+      width: 60%;
+      border-radius: 20px;
+      border: 3px solid $colour-1;
+      margin-bottom: 100px;
+    }
+  }
+}

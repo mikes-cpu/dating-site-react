@@ -1,9 +1,10 @@
 import "./App.scss";
+import Routes from "./containers/Routes/Routes";
 
 function App() {
   return (
     <div className="App">
-      <h1>heeeeey</h1>
+      <Routes />
     </div>
   );
 }

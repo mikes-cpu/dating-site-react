@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+.queueSignup {
+  background-color: $colour-1;
+  .queueSignup__container {
+    min-height: calc(var(--vh, 1vh) * 100 - 75px);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  p {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .queueSignup__container * {
+    margin: 15px;
+  }
+}

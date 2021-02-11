@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.SectionLayout_1__container {
+  .container__section-img-wrapper {
+    .row__image {
+      width: 100%;
+    }
+  }
+
+  .container__section-text-wrapper {
+    margin: 80px auto;
+    text-align: center;
+    color: $text-colour-secondary;
+    width: 80%;
+
+    img {
+      width: 80px;
+      margin: 0 auto 20px auto;
+    }
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      font-weight: 400;
+    }
+  }
+}

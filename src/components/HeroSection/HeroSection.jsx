@@ -14,7 +14,7 @@ function HeroSection({ signIn }) {
 
   const controlHeadingSize = () => {
     if (window.innerWidth <= 768) {
-      setHeadingSize("small");
+      setHeadingSize("medium");
     } else {
       setHeadingSize("large");
     }
@@ -23,7 +23,7 @@ function HeroSection({ signIn }) {
 
   useState(() => {
     if (window.innerWidth <= 768) {
-      setHeadingSize("small");
+      setHeadingSize("medium");
     } else {
       setHeadingSize("large");
     }

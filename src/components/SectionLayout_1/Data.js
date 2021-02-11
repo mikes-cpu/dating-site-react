@@ -6,10 +6,10 @@ export const section_1_ObjOne = {
   headline_style: "headerText--primary",
   headline_size: "headerText--medium",
   headline_color: "headerText--pink",
-  description: `In a dating scene dominated by swipe-lefts and swipe-rights, we
+  para_1: `In a dating scene dominated by swipe-lefts and swipe-rights, we
   like to do things differently. POM delivers genuine connections
-  based on a shared love of the same music. <br />
-  <br /> Launching in London soon, there’s a limited number of spots
+  based on a shared love of the same music.`,
+  para_2: `Launching in London soon, there’s a limited number of spots
   available for our upcoming beta so sign up now for early-access
   benefits.`,
   image: ImagePersonCouple,

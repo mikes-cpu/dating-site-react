@@ -18,9 +18,28 @@
   .container__section-video-wrapper {
     video {
       width: 60%;
-      border-radius: 20px;
+      border-radius: 40px;
       border: 3px solid $colour-1;
       margin-bottom: 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionLayout_2__container {
+    flex-direction: row !important;
+
+    .container__section-text-wrapper {
+      flex: 1;
+      margin: auto;
+    }
+    .container__section-video-wrapper {
+      flex: 1;
+
+      video {
+        width: 35%;
+        margin: auto;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../Button/Button";
 import { HeaderText } from "../HeaderText/HeaderText";
 import "./SectionLayout_2.scss";
@@ -13,6 +13,24 @@ function SectionLayout_2({
   button_style,
   button_size,
 }) {
+  const [headingSize, setHeadingSize] = useState("");
+
+  const controlHeadingSize = () => {
+    if (window.innerWidth <= 768) {
+      setHeadingSize("small");
+    } else {
+      setHeadingSize("medium");
+    }
+  };
+  window.addEventListener("resize", controlHeadingSize);
+
+  useState(() => {
+    if (window.innerWidth <= 768) {
+      setHeadingSize("small");
+    } else {
+      setHeadingSize("medium");
+    }
+  }, []);
   return (
     <>
       <div className="sectionLayout_2">
@@ -21,7 +39,7 @@ function SectionLayout_2({
             <HeaderText
               headerText={headline}
               headerTextStyle={headline_style}
-              headerTextSize={headline_size}
+              headerTextSize={`headerText--${headingSize}`}
               headerTextColor={headline_color}
             />
             <Button

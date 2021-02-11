@@ -12,14 +12,17 @@
   color: $text-colour-primary;
   text-decoration: underline;
 }
-.headerText--small {
+.headerText--xsmall {
   font-size: 1rem;
 }
-.headerText--medium {
+.headerText--small {
   font-size: 1.5rem;
 }
+.headerText--medium {
+  font-size: 2.5rem;
+}
 .headerText--large {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .headerText--white {
   color: $text-colour-primary;

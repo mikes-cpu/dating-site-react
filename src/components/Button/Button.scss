@@ -43,9 +43,14 @@
 }
 
 .button--basic--white {
-  border-radius: 2px;
+  border-radius: 4px;
   color: $colour-1;
   background-color: #fff;
+  white-space: nowrap;
+  height: 40px;
+  padding: 10px 15px;
+  line-height: 20px;
+  font-size: 10px;
 }
 .button--small {
 }

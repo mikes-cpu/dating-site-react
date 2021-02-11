@@ -7,11 +7,11 @@
     text-align: center;
 
     .container__text-wrapper {
-      margin-bottom: 40px;
-
       ul {
         margin-top: 20px;
+        margin-bottom: 20px;
         line-height: 30px;
+        list-style: none;
       }
 
       .text-wrapper__imageAppSore {
@@ -26,6 +26,7 @@
     hr {
       width: 75%;
       margin: auto;
+      margin-top: 40px;
     }
 
     .container__link-wrapper {
@@ -73,6 +74,49 @@
           }
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container__text-wrapper {
+    display: flex;
+    justify-content: center;
+
+    img {
+      display: block;
+    }
+
+    div {
+      margin: 0 60px;
+      text-align: left;
+    }
+  }
+
+  .container__link-wrapper {
+    display: flex;
+    // // align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    width: 70%;
+    margin: auto;
+
+    div {
+      display: flex;
+      height: fit-content;
+
+      div {
+        margin-left: 10px;
+      }
+    }
+
+    .link-wrapper__social {
+      // display: flex;
+      margin: 5px 0 0 0 !important;
+      // justify-content: space-evenly;
+      // width: 20% !important;
+      // // margin: 40px auto 0 auto;
+      // padding-bottom: 40px !important;
     }
   }
 }

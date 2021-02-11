@@ -3,7 +3,12 @@ import "./HeaderText.scss";
 
 const STYLES = ["headerText--primary", "headerText--underline"];
 
-const SIZES = ["headerText--small", "headerText--medium", "headerText--large"];
+const SIZES = [
+  "headerText--xsmall",
+  "headerText--small",
+  "headerText--medium",
+  "headerText--large",
+];
 
 const COLOR = [
   "headerText--white",

@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./SectionLayout_1.scss";
 
 import { HeaderText } from "../HeaderText/HeaderText";
 import { Button } from "../Button/Button";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function SectionLayout_1({
   headline,
@@ -35,6 +38,10 @@ function SectionLayout_1({
       setHeadingSize("medium");
     }
   }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <div className="SectionLayout_1">
@@ -43,19 +50,21 @@ function SectionLayout_1({
             <img className="row__image" src={image} alt="" />
           </div>
           <div className="container__section-text-wrapper">
-            <img src={logo} alt="" />
+            <img data-aos="fade-up" src={logo} alt="" />
             <HeaderText
               headerText={headline}
               headerTextStyle={headline_style}
               headerTextSize={`headerText--${headingSize}`}
               headerTextColor={headline_color}
+              headerTextTransition="fade-up"
             />
-            <p>{para_1}</p>
-            <p>{para_2}</p>
+            <p data-aos="fade-up">{para_1}</p>
+            <p data-aos="fade-up">{para_2}</p>
             <Button
               buttonText={button_text}
               buttonStyle={button_style}
               buttonSize={button_size}
+              buttonTransition="fade-up"
             />
           </div>
         </div>

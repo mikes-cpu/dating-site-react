@@ -22,6 +22,7 @@ export const HeaderText = ({
   headerTextStyle,
   headerTextSize,
   headerTextColor,
+  headerTextTransition,
 }) => {
   const checkHeaderStyle = STYLES.includes(headerTextStyle)
     ? headerTextStyle
@@ -36,6 +37,7 @@ export const HeaderText = ({
   return (
     <h2
       className={`headerText ${checkHeaderStyle} ${checkHeaderSize} ${checkHeaderColor}`}
+      data-aos={headerTextTransition}
     >
       {headerText}
     </h2>

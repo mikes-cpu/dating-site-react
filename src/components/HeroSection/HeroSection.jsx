@@ -4,6 +4,9 @@ import "./HeroSection.scss";
 import useVH from "react-viewport-height";
 import { Button } from "../Button/Button";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 function HeroSection({ signIn }) {
   useVH();
 
@@ -26,6 +29,10 @@ function HeroSection({ signIn }) {
     }
   }, []);
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <div className="HeroSection">
@@ -35,18 +42,16 @@ function HeroSection({ signIn }) {
             headerTextStyle="headerText--primary"
             headerTextSize={`headerText--${headingSize}`}
             headerTextColor="headerText--white"
+            headerTextTransition="fade-up"
           />
-
-          {/* "headerText--large" */}
-          <HeaderText />
           <HeaderText
             headerText="MUSIC LOVERS"
             headerTextStyle="headerText--underline"
             headerTextSize={`headerText--${headingSize}`}
             headerTextColor="headerText--pink"
+            headerTextTransition="fade-up"
           />
-          <HeaderText />
-          <p>
+          <p data-aos="fade-up">
             POM harnesses the Power of Music, channelling it into an exciting,
             new inclusive dating app.
           </p>
@@ -55,6 +60,7 @@ function HeroSection({ signIn }) {
             buttonStyle="button--primary-pink"
             buttonSize="button-medium"
             onClick={signIn}
+            buttonTransition="fade-up"
           />
         </div>
       </div>

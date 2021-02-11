@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../Button/Button";
 import { HeaderText } from "../HeaderText/HeaderText";
 import "./SectionLayout_2.scss";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function SectionLayout_2({
   headline,
@@ -31,6 +34,10 @@ function SectionLayout_2({
       setHeadingSize("medium");
     }
   }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <div className="sectionLayout_2">
@@ -41,15 +48,17 @@ function SectionLayout_2({
               headerTextStyle={headline_style}
               headerTextSize={`headerText--${headingSize}`}
               headerTextColor={headline_color}
+              headerTextTransition="fade-up"
             />
             <Button
               buttonText={button_text}
               buttonStyle={button_style}
               buttonSize={button_size}
+              buttonTransition="fade-up"
             />
           </div>
           <div className="container__section-video-wrapper">
-            <video autoPlay loop mute>
+            <video data-aos="fade-up" autoPlay loop mute>
               <source src={video} type="video/mp4" />
             </video>
           </div>

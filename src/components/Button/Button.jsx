@@ -13,16 +13,23 @@ const STYLES = [
 
 const SIZES = ["button--small", "button--medium", "button--Large"];
 
-export const Button = ({ buttonText, buttonStyle, buttonSize, onClick }) => {
+export const Button = ({
+  buttonText,
+  buttonStyle,
+  buttonSize,
+  onClick,
+  buttonTransition,
+}) => {
   const checkHeaderStyle = STYLES.includes(buttonStyle) ? buttonStyle : null;
   const checkHeaderSize = SIZES.includes(buttonSize) ? buttonSize : null;
 
   return (
-    <h2
+    <button
       className={`button ${checkHeaderStyle} ${checkHeaderSize}`}
       onClick={onClick}
+      data-aos={buttonTransition}
     >
       {buttonText}
-    </h2>
+    </button>
   );
 };

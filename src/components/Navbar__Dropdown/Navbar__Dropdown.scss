@@ -99,7 +99,7 @@
     width: 100%;
     height: fit-content;
     text-align: center;
-    top: -480px;
+    top: -460px;
     z-index: 0;
     border-bottom: 1px solid $colour-2;
     transition: 2s;
@@ -181,5 +181,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hide {
+    top: -520px !important;
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar__Dropdown.scss";
 import { HeaderText } from "../HeaderText/HeaderText";
 import { Button } from "../Button/Button";
@@ -13,6 +13,25 @@ function Navbar__Dropdown({ signIn, hamburger }) {
   const showHide = ["navbar__dropdown__container"];
   hamburger ? showHide.push("active") : showHide.push("hide");
 
+  const [headingSize, setHeadingSize] = useState("");
+
+  const controlHeadingSize = () => {
+    if (window.innerWidth <= 768) {
+      setHeadingSize("xsmall");
+    } else {
+      setHeadingSize("small");
+    }
+  };
+  window.addEventListener("resize", controlHeadingSize);
+
+  useState(() => {
+    if (window.innerWidth <= 768) {
+      setHeadingSize("xsmall");
+    } else {
+      setHeadingSize("small");
+    }
+  }, []);
+
   return (
     <>
       <div className="navbar__dropdown">
@@ -23,7 +42,7 @@ function Navbar__Dropdown({ signIn, hamburger }) {
                 <HeaderText
                   headerText="HOME"
                   headerTextStyle="headerText--primary"
-                  headerTextSize="headerText--small"
+                  headerTextSize={`headerText--${headingSize}`}
                   headerTextColor="headerText--pink"
                 />
               </li>
@@ -31,7 +50,7 @@ function Navbar__Dropdown({ signIn, hamburger }) {
                 <HeaderText
                   headerText="HOW IT WORKS"
                   headerTextStyle="headerText--primary"
-                  headerTextSize="headerText--small"
+                  headerTextSize={`headerText--${headingSize}`}
                   headerTextColor="headerText--pink"
                 />
               </li>
@@ -39,7 +58,7 @@ function Navbar__Dropdown({ signIn, hamburger }) {
                 <HeaderText
                   headerText="DATING TIPS"
                   headerTextStyle="headerText--primary"
-                  headerTextSize="headerText--small"
+                  headerTextSize={`headerText--${headingSize}`}
                   headerTextColor="headerText--pink"
                 />
               </li>
@@ -47,7 +66,7 @@ function Navbar__Dropdown({ signIn, hamburger }) {
                 <HeaderText
                   headerText="CONTACT"
                   headerTextStyle="headerText--primary"
-                  headerTextSize="headerText--small"
+                  headerTextSize={`headerText--${headingSize}`}
                   headerTextColor="headerText--pink"
                 />
               </li>

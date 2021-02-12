@@ -1,7 +1,16 @@
 @import "../../variables.scss";
 
-.HeroSection {
+.canvas {
+  position: absolute;
+  min-height: calc(var(--vh, 1vh) * 100 - 75px);
   background-color: $colour-1;
+  width: 100%;
+  z-index: -1;
+}
+
+.HeroSection {
+  // background-color: $colour-1;
+  background-color: transparent;
   .HeroSection__container {
     min-height: calc(var(--vh, 1vh) * 100 - 75px);
     width: 80%;

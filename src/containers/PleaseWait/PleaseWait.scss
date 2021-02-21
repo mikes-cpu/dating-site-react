@@ -1,0 +1,12 @@
+@import "../../variables.scss";
+
+.pleaseWait {
+  background-color: $colour-1;
+  .pleaseWait__container {
+    min-height: calc(var(--vh, 1vh) * 100 - 75px);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+  }
+}

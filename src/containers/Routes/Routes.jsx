@@ -4,6 +4,7 @@ import firebase, { googleProvider } from "../../firebase";
 import MockJson from "../../data/queue.json";
 import Home from "../Home/Home";
 import QueueSignup from "../QueueSignup/QueueSignup";
+import PleaseWait from "../PleaseWait";
 
 const Routes = () => {
   const [queue, setQueue] = useState([]);
@@ -11,12 +12,11 @@ const Routes = () => {
 
   const signIn = () => {
     firebase.auth().signInWithRedirect(googleProvider);
+    navigate("pleasewait");
   };
 
   const signOut = () => {
-    console.log("hi");
     firebase.auth().signOut();
-    navigate("/");
   };
 
   const getUserInfo = () => {
@@ -50,6 +50,7 @@ const Routes = () => {
         signIn={signIn}
         user={user}
       />
+      <PleaseWait path="pleasewait" />
     </Router>
   );
 };
